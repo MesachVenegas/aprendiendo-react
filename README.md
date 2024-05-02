@@ -79,3 +79,5 @@ Te preguntara con que quieres trabajar, seleccionamos react y posteriormente pre
 Al finalizar nos dará unas breves instrucciones para nuestro proyecto que básicamente es, moverse a la carpeta donde se creo el proyecto, instalar las dependencias del mismo y ejecutar nuestro proyecto en modo desarrollo.
 
 ![Installed](/images/completed.png)
+
+Yo usare create-react-app para crear mi primer proyecto de React. Y nos vamos al proyecto [MiPrimerApp](/primer-app/README.md).
