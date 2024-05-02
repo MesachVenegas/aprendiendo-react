@@ -7,6 +7,7 @@
     pkgs.nodejs_20
     pkgs.npm-check
     pkgs.bun
+    pkgs.tree
   ];
   # Sets environment variables in the workspace
   env = {};
