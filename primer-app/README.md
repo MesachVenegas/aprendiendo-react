@@ -23,7 +23,9 @@ Este script no genera un ```build``` que es una carpeta con nuestro proyecto opt
 
 > **Nota**: Este comando solo se puede ejecutar una vez. Una vez realizado un  `eject`, no se puede restaurar a su estado anterior.
 
-Básicamente este script que copia todas las dependencias y archivos de configuración permitiéndonos limpiar nuestro proyecto de todo lo que no necesitamos manteniendo las mismas dependencias. Y la estructura del proyecto seria de esta manera.
+Básicamente este script que copia todas las dependencias y archivos de configuración permitiéndonos limpiar nuestro proyecto de todo lo que no necesitamos manteniendo las mismas dependencias.
+
+## Estructura del Proyecto
 
 ```console
 primer-app/
