@@ -113,8 +113,7 @@ Vite nos proporciona los siguientes scripts funcionales para nuestro proyecto.
   <p>
     Este sera el comando que mas usaremos ya que nos permite levantar nuestro servidor para desarrollo. Donde podemos ver nuestra app y los cambios que vamos realizando.
     <br />
-    <br />
-    <code>npm run dev</code>
+    <pre><code>npm run dev</code></pre>
   </p>
 </details>
 
@@ -125,8 +124,7 @@ Vite nos proporciona los siguientes scripts funcionales para nuestro proyecto.
   <p>
     Nos creara una carpeta llamada dist con nuestra app, lista para producción, y que usaremos para publicar nuestra aplicación. 
     <br />
-    <br />
-    <code>npm run build</code>
+    <pre><code>npm run build</code></pre>
   </p>
 </details>
 
@@ -137,9 +135,8 @@ Vite nos proporciona los siguientes scripts funcionales para nuestro proyecto.
   <p>
     Nos ejecuta nuestro linter para comprobar nuestro código en busca de posibles errores o problemas de estilo. Este nos ayuda garantizar que el código sigue las mejores practicas y es consistente en todo el proyecto.
     <br />
-    <br />
-    <code>npm run lint</code>
-  </p>
+    <pre><code>npm run lint</code></pre>
+  </pre>
 </details>
 
 <details>
@@ -149,7 +146,6 @@ Vite nos proporciona los siguientes scripts funcionales para nuestro proyecto.
   <p>
     Es una herramienta útil que nos permite ver cómo se verá y funcionará la aplicación en un entorno real, sin necesidad de desplegar en un servidor remoto.
     <br />
-    <br />
-    <code>npm run preview</code>
-  </p>
+    <pre><code>npm run preview</code></pre>
+  </pre>
 </details>
