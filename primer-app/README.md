@@ -20,7 +20,7 @@ Una vez creamos nuestro proyecto con vite nos creara la siguiente estructura pro
 <details>
   <summary>node_modules</summary>
   <p>
-    Este directorio aparece una vez hemos ejecutado el `npm i` en este se almacenan todas las dependencias de nuestro proyecto, es decir todo lo necesario para que nuestra aplicación funcione.
+    Este directorio aparece una vez hemos ejecutado el <code>npm i</code> en este se almacenan todas las dependencias de nuestro proyecto, es decir todo lo necesario para que nuestra aplicación funcione.
   </p>
 </details>
 
@@ -81,7 +81,7 @@ Una vez creamos nuestro proyecto con vite nos creara la siguiente estructura pro
 <details>
   <summary>package's</summary>
   <p>
-    Hay dos de estos archivos el package.json y package-lock.json, en el primero es nuestro archivo que crea node donde se guarda la información de nuestro proyecto, el nombre del mismo, los scripts que se pueden usar en el mismo, las dependencias que se debe usar en el app y en su desarrollo, es en este archivo en donde se le indica a  `npm` que debe instalar cuando corremos nuestro comando `npm i`, esto nos creara nuestro package-lock.json y node_modules. En el package-lock.json se guarda la información de nuestras dependencias instaladas cuando suelen ocurrir errores es común borrar estos dos elementos, y volver a hacer una instalación de las dependencias.
+    Hay dos de estos archivos el package.json y package-lock.json, en el primero es nuestro archivo que crea node donde se guarda la información de nuestro proyecto, el nombre del mismo, los scripts que se pueden usar en el mismo, las dependencias que se debe usar en el app y en su desarrollo, es en este archivo en donde se le indica a  <code>npm</code> que debe instalar cuando corremos nuestro comando <code>npm i</code>, esto nos creara nuestro package-lock.json y node_modules. En el package-lock.json se guarda la información de nuestras dependencias instaladas cuando suelen ocurrir errores es común borrar estos dos elementos, y volver a hacer una instalación de las dependencias.
   </p>
 </details>
 
