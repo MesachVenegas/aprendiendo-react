@@ -149,3 +149,4 @@ Vite nos proporciona los siguientes scripts funcionales para nuestro proyecto.
     <pre><code>npm run preview</code></pre>
   </pre>
 </details>
+
