@@ -247,7 +247,7 @@ export default function App() {
 ```
 
 <div align='center'>
-  <image src='https://firebasestorage.googleapis.com/v0/b/kazu-moda-nextjs-firebase.appspot.com/o/funcionalidad.gif?alt=media&token=893c5d00-6a53-4c52-8672-a1d5d999203f' height='300px'>
+  <image src='https://firebasestorage.googleapis.com/v0/b/kazu-moda-nextjs-firebase.appspot.com/o/funcionalidad.gif?alt=media&token=893c5d00-6a53-4c52-8672-a1d5d999203f' height='400px'>
 </div>
 
 Otro ejemplo de funcionalidad como ves hay un botón que se activa cuando hacemos click sobre el, y el segundo botón se activa cuando hacemos hover sobre el. De igual manera puedes observar que declaramos nuestras funciones usando la palabra `handle` este es una buena practica empezar con esto para indicar que esa función maneja eventos. Ya se un click u cualquier otro tipo de evento, `handleSubmit` para manejar un formulario por ejemplo.
