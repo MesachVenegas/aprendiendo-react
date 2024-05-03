@@ -150,7 +150,7 @@ Vite nos proporciona los siguientes scripts funcionales para nuestro proyecto.
   </pre>
 </details>
 
-### JSX
+## JSX
 
 Ahora si bien react te permite perfectamente trabajar directamente con archivos de extension .js, se recomienda usar .jsx que no es otra cosa que un lenguaje de marcado usado por react que nos permite trabajar con JavaScript y los elementos de HTML de forma mas dinámica y con mayor facilidad de lectura y ademas que facilita el desarrollo al permitir el auto completado de etiquetas y otras funciones en nuestro editor de código.
 
@@ -180,4 +180,74 @@ como puedes observar si vamos a nuestro componente app podremos ver una estructu
 
 En este tipo de ejemplo no se puede notar mucho la diferencia, pero se puede notar que es mas fácil de aplicar el cambio en react que en el caso anterior. ya que por lo general tendríamos que crear nuestro archivo index para el html y un script para nuestro javascript. Y para alguien que esta leyendo el código por primera vez tiene que ir a cada uno de estos para poder ver la funcionalidad en total de una sola parte, en cambio con JSX todo lo requerido para que mi componente funcione se encuentra en el mismo, permitiendo de esta forma una mayor modularidad y facilidad de lectura.
 
+### Funcionalidad
 
+Te preguntaras y en este caso como agregamos funcionalidad a nuestros elementos, es muy sencillo supongamos que tenemos un botón y queremos que este boto nos muestre una alerta con un contenido cuando lo presionamos. En la forma tradicional tendríamos que crear primero nuestra estructura html y luego mediante javascript acceder al elemento mediante su identificador y asignarle que hacer al detectar un evento de tipo click.
+
+```html
+<main>
+  <button id="btn">Click Me!</button>
+</main>
+<script>
+  const btn = document.getElementById('btn');
+  btn.addEventListener('click', () => alert('Hola Mundo'));
+</script>
+```
+
+Esto en react se vería de la siguiente forma:
+
+```jsx
+export default function App()[
+  const handleClick = () => alert('Hola Mundo');
+
+  return(
+    <main>
+      <button onClick={handleClick}>Click Me!</button>
+    </main>
+  )
+]
+```
+o bien 
+
+```jsx
+export default function App() {
+  return (
+    <main>
+      <button onClick={() => alert('Hola Mundo')}>Click Me!</button>
+    </main>
+  )
+}
+```
+
+En esto hay que destacar que los elementos cuenta con diferente maneras de manejar los eventos, y dependen también del tipo de elemento, poco a poco los iremos descubriendo. Ademas también es importante mencionar que hay una gran diferencia en llamar a mi función `handleClick()` a llamarla `handleClick` en el primer caso le estamos indicando a react que la función deberá ejecutarse justo en el renderizado del componente y de la segunda forma es como decirle a react que ese botón tiene una acción por ejecutar y este lo recordara que debe activarla cuando se hace click sobre este. De igual manera si pasamos directamente la acción a nuestro onClick sin declarar una función sucederá los mismo que el ejemplo anterior. Usar ```onClick={alert('Hola mundo')}``` ejecutara directamente la alerta por lo que hay que declarar una función que activara a esta.
+
+```jsx
+export default function App() {
+
+  const handleClick = () => {
+    alert('Hola mundo!');
+    }
+
+  const handleMouseOver = () => {
+    alert('Hola mundo!');
+  }
+
+  return (
+    <main className="flex flex-col gap-6 items-center justify-center w-full min-h-screen">
+      <h1 className="text-3xl font-bold">Hola Mundo</h1>
+      <button onClick={handleClick} className="bg-blue-400 p-2">
+        haz click aquí
+      </button>
+      <button onMouseOver={handleMouseOver} className="bg-slate-400 p-2">
+        pasa el mouse sobre mi
+      </button>
+    </main>
+  )
+}
+```
+
+<div align='center'>
+  <image src='https://firebasestorage.googleapis.com/v0/b/kazu-moda-nextjs-firebase.appspot.com/o/funcionalidad.gif?alt=media&token=893c5d00-6a53-4c52-8672-a1d5d999203f' height='300px'>
+</div>
+
+Otro ejemplo de funcionalidad como ves hay un botón que se activa cuando hacemos click sobre el, y el segundo botón se activa cuando hacemos hover sobre el. De igual manera puedes observar que declaramos nuestras funciones usando la palabra `handle` este es una buena practica empezar con esto para indicar que esa función maneja eventos. Ya se un click u cualquier otro tipo de evento, `handleSubmit` para manejar un formulario por ejemplo.
