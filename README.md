@@ -19,7 +19,7 @@ Ademas de ser de código abierto React es famoso por sus características:
   - Velocidad
   - Componentes
   - Desarrollo declarativo
-  - Anidación* de componentes
+  - Anidación de componentes
   - Isomorfismo
   - Agilidad de desarrollo
 
@@ -30,17 +30,6 @@ Uno de los aspectos que mas destacan de react es su velocidad de renderizado. Es
 ### Componentes
 
 Citando las palabras de la guía oficial *"Los componentes permiten separar a interfaz de usuario en piezas independientes, reutilizables y pensar en cada pieza de forma aislada"* . Al trabajar con componentes forzamos de algún modo a nuestro desarrollo a se mas manejable.
-
-Los componentes no son otra cosa que elementos de nuestra aplicación ya sea visuales o con lógica para dar funcionalidad a la misma. Ahora antes de ir directamente a los componentes necesitamos entender como ve react a los componentes en el DOM, cuando react renderiza nuestra aplicación ya sabemos que crea una version del DOM pero virtual en la cual corre y ve todos los cambios realizados para así solo actualizar los cambios necesarios, ahora bien como lo organiza?, sencillo lo estructura en forma de árbol y los organiza según su orden:
-
-![DOM Tree](https://es.react.dev/_next/image?url=%2Fimages%2Fdocs%2Fdiagrams%2Fpreserving_state_dom_tree.dark.png&w=1080&q=75)
-
-En consecuencia estos se van agrupando en un orden,  en ejemplo podemos ver que tenemos 3 componentes los cuales se ordenan en componentes de primer orden y sus requeridos, se suelen separar en 2 tipos diferentes de arboles los arboles de renderizado y los arboles de importación, ambos son similares son lo con pequeñas diferencias, pero técnicamente en el primer caso se puede decir que determinan lo que cada componente renderiza y los subcomponentes que lo conforman:
-
-![Rendering Tree](https://es.react.dev/_next/image?url=%2Fimages%2Fdocs%2Fdiagrams%2Fconditional_render_tree.dark.png&w=640&q=75)
-
-Como se puede ver en la imagen react establece un componente raíz que es donde se renderiza toda nuestra aplicación y en orden establece los componentes subyacentes a este, ademas esto nos permite determinar que se debe ver y cuando, en la imagen puedes observar que en el componente `InspirationGenerator` tiene 2 hijos y un signo de interrogación, indica que cualquiera de esos dos componentes puede ser mostrado al usuario en base a si se cumple determinada condición, a esto se le conoce como renderizado condicional. Esto nos permite tener comportamientos para ciertas acciones dentro de nuestra vista
-
 
 React nos proporciona varios tipos de componentes(Puros, de contenedor, de clase, de función, etc..) con los que facilitar su reutilización en todos nuestros proyectos tanto dentro como entre ellos.
 
@@ -53,6 +42,22 @@ React trabaja sobre el estado global de la aplicación y responde a los cambios 
 ### Anidación de componentes
 
 Los componentes pueden ser anidados, de forma que los componentes de orden superior propagan datos a los de orden inferior. La comunicación entre ellos es unidireccional y se usan ls eventos para que los componentes inferiores sean reconocidos por los orden superior.
+
+<br />
+
+![DOM Tree](https://es.react.dev/_next/image?url=%2Fimages%2Fdocs%2Fdiagrams%2Fpreserving_state_dom_tree.dark.png&w=1080&q=75)
+
+En consecuencia estos se van agrupando en un orden,  en ejemplo podemos ver que tenemos 3 componentes los cuales se ordenan en componentes de orden superior y los componentes de orden inferior, el primer caso se puede decir que determinan lo que cada componente renderiza y los subcomponentes que lo conforman:
+
+<br/>
+
+<div align='center'>
+  <image src='https://es.react.dev/_next/image?url=%2Fimages%2Fdocs%2Fdiagrams%2Fconditional_render_tree.dark.png&w=640&q=75' alt='Rendering Tree'>
+</div>
+
+<br/>
+
+Como se puede ver en la imagen react establece un componente raíz que es donde se renderiza toda nuestra aplicación y en orden establece los componentes subyacentes a este, ademas esto nos permite determinar que se debe ver y cuando, en la imagen puedes observar que en el componente `InspirationGenerator` tiene 2 hijos y un signo de interrogación, indica que cualquiera de esos dos componentes puede ser mostrado al usuario en base a si se cumple determinada condición, a esto se le conoce como renderizado condicional. Esto nos permite tener comportamientos para ciertas acciones dentro de nuestra vista
 
 ### Isomorfismo
 
