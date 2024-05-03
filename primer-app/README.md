@@ -1,10 +1,10 @@
 # React + Vite
 
 <br>
-<div style="display: flex; justify-content: center; align-items: center;">
+<div style="display: flex;  justify-content: center; align-items: center;">
   <img src="https://vitejs.dev/logo.svg" alt="Vite logo" width="100" height="100" />
   <img width='20px'>
-  <p>+</p>
+  <span style="font-size: 2.5rem;">+</span>
   <img width='20px'>
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="React logo" width="100" height="90" />
 </div>
