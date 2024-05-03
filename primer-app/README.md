@@ -101,3 +101,45 @@ Una vez creamos nuestro proyecto con vite nos creara la siguiente estructura pro
 <br/>
 
 Ahora podrás ver que aparte de los ya mencionados hay dos mas que no aparecen en lo explicado, esto se debe a que son una configuración que he añadido, y no es otra que para poder trabar con [TailwindCss](https://tailwindcss.com). Tailwind es una librería de CSS con clases predefinidas que nos permite dar estilos a nuestra app sin necesidad de escribir nuestras propias reglas CSS. Esto no nos impide hacerlas. Para poder trabajar con tailwind solo sigue su documentación para su instalación con Vite en el siguiente enlace [TailwindCss + Vite](https://tailwindcss.com/docs/guides/vite).
+
+## Scripts
+
+Vite nos proporciona los siguientes scripts funcionales para nuestro proyecto.
+
+<details>
+  <summary>
+    <strong>dev</strong>
+  </summary>
+  <p>
+    Este sera el comando que mas usaremos ya que nos permite levantar nuestro servidor para desarrollo. Donde podemos ver nuestra app y los cambios que vamos realizando.
+    <pre>
+      <code>
+        npm run dev
+      </code>
+    </pre>
+  </p>
+</details>
+<details>
+  <summary>
+    <strong>build</strong>
+  </summary>
+  <p>
+    Este sera el comando que mas usaremos ya que nos permite levantar nuestro servidor para desarrollo
+  </p>
+</details>
+<details>
+  <summary>
+    <strong>lint</strong>
+  </summary>
+  <p>
+    Este sera el comando que mas usaremos ya que nos permite levantar nuestro servidor para desarrollo
+  </p>
+</details>
+<details>
+  <summary>
+    <strong>preview</strong>
+  </summary>
+  <p>
+    Este sera el comando que mas usaremos ya que nos permite levantar nuestro servidor para desarrollo
+  </p>
+</details>
