@@ -53,7 +53,6 @@ Una vez creamos nuestro proyecto con vite nos creara la siguiente estructura pro
         Ahora bien el main es un archivo necesario donde le informamos a react que debe iniciar nuestro DOM Virtual, y donde se va a renderizar nuestra aplicación.
       </li>
     </ul>
-    assets:
   </p>
 </details>
 
@@ -88,7 +87,7 @@ Una vez creamos nuestro proyecto con vite nos creara la siguiente estructura pro
 <details>
   <summary>README</summary>
   <p>
-    Nuestro readme es un archivo que suele acompañar a todos los repositorios, donde suele ir información del mismo, algunos con alguna breve documentación sobre como ejecutar el proyecto entre otras.
+    Nuestro readme es un archivo que suele acompañar a todos los repositorios, donde suele ir información del mismo, algunos con alguna breve documentación sobre como ejecutar el proyecto entre otras. Me estas leyendo ahora mismo 😎.
   </p>
 </details>
 
