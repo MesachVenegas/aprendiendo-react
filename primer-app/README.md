@@ -1,13 +1,15 @@
 # React + Vite
 
 <br>
-<div style="display: flex;  justify-content: center; align-items: center;">
+
+<div style="display:flex;  justify-content: center; align-items: center;" align="center">
   <img src="https://vitejs.dev/logo.svg" alt="Vite logo" width="100" height="100" />
   <img width='20px'>
   <span style="font-size: 2.5rem;">+</span>
   <img width='20px'>
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="React logo" width="100" height="90" />
 </div>
+
 <br>
 
 Para nuestro primer proyecto estaremos usando Vite, vite es un Framework Ligero y Rápido que nos permite crear un proyecto, a diferencia de `RCA`(react-create-app), vite nos proporciona de una forma mas rápida de crear un proyecto de react y establece configuraciones mínimas para este mismo.
