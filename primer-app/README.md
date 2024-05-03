@@ -150,3 +150,34 @@ Vite nos proporciona los siguientes scripts funcionales para nuestro proyecto.
   </pre>
 </details>
 
+### JSX
+
+Ahora si bien react te permite perfectamente trabajar directamente con archivos de extension .js, se recomienda usar .jsx que no es otra cosa que un lenguaje de marcado usado por react que nos permite trabajar con JavaScript y los elementos de HTML de forma mas dinámica y con mayor facilidad de lectura y ademas que facilita el desarrollo al permitir el auto completado de etiquetas y otras funciones en nuestro editor de código.
+
+```jsx
+export default function App() {
+  const greeting = 'Hola Mundo';
+
+  return (
+    <main className="flex items-center justify-center w-full min-h-screen">
+      <h1 className="text-3xl font-bold">{greeting}</h1>
+    </main>
+  )
+}
+```
+como puedes observar si vamos a nuestro componente app podremos ver una estructura similar a esta, un componente de react no es otra cosa que una función de JavaScript que devuelve un elemento, con etiquetas html para que sea renderizado con la diferencia que a nosotros nos permite combinar javascript directamente con HTML. Como se ves tenemos una variable `greeting` con el valor de Hola mundo que es llamado dentro de nuestra etiqueta H1, esto nos permite realizar renderizado dinámico de información sin necesidad de recurrir a la forma básica de modificar elementos del DOM con javascript
+
+```html
+<main>
+  <h1 id="title"></h1>
+</main>
+<script>
+  let greeting = 'Hola Mundo';
+  const title = document.getElementById('title');
+  title.innerHTML = greeting;
+</script>
+```
+
+En este tipo de ejemplo no se puede notar mucho la diferencia, pero se puede notar que es mas fácil de aplicar el cambio en react que en el caso anterior. ya que por lo general tendríamos que crear nuestro archivo index para el html y un script para nuestro javascript. Y para alguien que esta leyendo el código por primera vez tiene que ir a cada uno de estos para poder ver la funcionalidad en total de una sola parte, en cambio con JSX todo lo requerido para que mi componente funcione se encuentra en el mismo, permitiendo de esta forma una mayor modularidad y facilidad de lectura.
+
+
