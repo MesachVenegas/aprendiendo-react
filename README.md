@@ -198,6 +198,8 @@ export default function App() {
 
 Otro ejemplo de funcionalidad como ves hay un botón que se activa cuando hacemos click sobre el, y el segundo botón se activa cuando hacemos hover sobre el. De igual manera puedes observar que declaramos nuestras funciones usando la palabra `handle` este es una buena practica. Ya sea un click u cualquier otro tipo de evento, `handleSubmit` para manejar un formulario por ejemplo.
 
+### Propiedades
+
 Hay que tomar en cuneta lo siguiente, React recomienda mantener nuestros complementos lo más puros posibles, pero que quiere decir con esto. Al decir puro se refiere a que el componente solo debe encargarse de un solo calculo o función, esto permitirá a nuestros componentes evitar errores desconcertantes o comportamientos no deseados. Por lo que nuestros componentes deben:
 
   - **Encargarse de sus propios asuntos**. Es decir nuestros complementos no deben modificar ningún objeto o variable que existiera antes de ser llamado.
