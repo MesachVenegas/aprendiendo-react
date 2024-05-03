@@ -1,18 +1,16 @@
 # Aprendiendo React
 
 <br/>
-
 <div align="center">
     <image src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" width="300" />
 </div>
-
 <br/>
 
 ## Que es React?
 
-React es una biblioteca de JavaScript de código abierto para crear interfaces de usuario interactivas. React no se debe confundir con un FrameWork, y fue creada por Facebook en el 2013 y sigue siendo mantenida por la misma hasta el dia de hoy.
+React es una biblioteca de JavaScript de código abierto para crear interfaces de usuario interactivas. React no se debe confundir con un FrameWork, y fue creada por Facebook en el 2013 y sigue siendo mantenida por la misma hasta el día de hoy.
 
-Lo interesante de esta es que como bien indica es una librería de código abierto, lo que significa que existen numerosas comunidades por la red que aportan información y ayuda, en el dia a dia.
+Lo interesante de esta es que como bien indica es una librería de código abierto, lo que significa que existen numerosas comunidades por la red que aportan información y ayuda, en el día a día.
 
 ## Que nos ofrece react?
 
@@ -80,4 +78,4 @@ Al finalizar nos dará unas breves instrucciones para nuestro proyecto que bási
 
 ![Installed](/images/completed.png)
 
-Yo usare create-react-app para crear mi primer proyecto de React. Y nos vamos al proyecto [MiPrimerApp](/primer-app/README.md).
+[MI Primer Proyecto ->](/primer-app/README.md)
